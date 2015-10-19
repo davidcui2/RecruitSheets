@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Student" representedClassName=".Student">
+        <attribute name="contactNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forApplicationEngineer" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forGraduateScheme" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forMarketing" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forOneYearPlacement" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forSoftwareEngineer" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="forSummerIntern" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="graduationYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intendedStartingDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staffCheck" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="staffNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" attributeType="Date" indexed="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Student" positionX="261" positionY="189" width="128" height="300"/>
     </elements>
 </model>
