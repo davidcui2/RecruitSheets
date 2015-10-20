@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		22F6BB531BD58F1000D08135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB521BD58F1000D08135 /* AppDelegate.swift */; };
 		22F6BB561BD58F1000D08135 /* RecruitSheets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB541BD58F1000D08135 /* RecruitSheets.xcdatamodeld */; };
-		22F6BB581BD58F1000D08135 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB571BD58F1000D08135 /* MasterViewController.swift */; };
-		22F6BB5A1BD58F1000D08135 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB591BD58F1000D08135 /* DetailViewController.swift */; };
+		22F6BB581BD58F1000D08135 /* ViewController in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB571BD58F1000D08135 /* ViewController */; };
+		22F6BB5A1BD58F1000D08135 /* ViewController in Sources */ = {isa = PBXBuildFile; fileRef = 22F6BB591BD58F1000D08135 /* ViewController */; };
 		22F6BB5D1BD58F1000D08135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F6BB5B1BD58F1000D08135 /* Main.storyboard */; };
 		22F6BB5F1BD58F1000D08135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F6BB5E1BD58F1000D08135 /* Assets.xcassets */; };
 		22F6BB621BD58F1000D08135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F6BB601BD58F1000D08135 /* LaunchScreen.storyboard */; };
@@ -43,8 +43,8 @@
 		22F6BB4F1BD58F1000D08135 /* RecruitSheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecruitSheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F6BB521BD58F1000D08135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F6BB551BD58F1000D08135 /* RecruitSheets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecruitSheets.xcdatamodel; sourceTree = "<group>"; };
-		22F6BB571BD58F1000D08135 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		22F6BB591BD58F1000D08135 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		22F6BB571BD58F1000D08135 /* ViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewController; sourceTree = "<group>"; };
+		22F6BB591BD58F1000D08135 /* ViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewController; sourceTree = "<group>"; };
 		22F6BB5C1BD58F1000D08135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F6BB5E1BD58F1000D08135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F6BB611BD58F1000D08135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 		22F6BB8A1BD590F600D08135 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				22F6BB571BD58F1000D08135 /* MasterViewController.swift */,
-				22F6BB591BD58F1000D08135 /* DetailViewController.swift */,
+				22F6BB571BD58F1000D08135 /* ViewController */,
+				22F6BB591BD58F1000D08135 /* ViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -235,6 +235,7 @@
 				TargetAttributes = {
 					22F6BB4E1BD58F1000D08135 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5QB7973RVT;
 					};
 					22F6BB671BD58F1000D08135 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -303,8 +304,8 @@
 				22F6BB881BD590E700D08135 /* Student.swift in Sources */,
 				22F6BB531BD58F1000D08135 /* AppDelegate.swift in Sources */,
 				22F6BB8D1BD5915000D08135 /* CoreDataFetcher.swift in Sources */,
-				22F6BB581BD58F1000D08135 /* MasterViewController.swift in Sources */,
-				22F6BB5A1BD58F1000D08135 /* DetailViewController.swift in Sources */,
+				22F6BB581BD58F1000D08135 /* ViewController in Sources */,
+				22F6BB5A1BD58F1000D08135 /* ViewController in Sources */,
 				22F6BB871BD590E700D08135 /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,11 +448,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RecruitSheets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delcam.RecruitSheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -459,11 +463,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RecruitSheets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delcam.RecruitSheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -534,6 +541,7 @@
 				22F6BB7E1BD58F1000D08135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F6BB7F1BD58F1000D08135 /* Build configuration list for PBXNativeTarget "RecruitSheetsTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +550,7 @@
 				22F6BB811BD58F1000D08135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F6BB821BD58F1000D08135 /* Build configuration list for PBXNativeTarget "RecruitSheetsUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +559,7 @@
 				22F6BB841BD58F1000D08135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
